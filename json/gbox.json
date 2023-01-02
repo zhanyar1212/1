@@ -1,0 +1,1113 @@
+{
+    "version": "1.0",
+    "sourceName": "TQM - Store",
+    "sourceAuthor": "tqmmos",
+    "sourceLinkTitle": "Trang chủ",
+    "sourceLinkUrl": "https://tqm-ipa.github.io",
+    "sourceImage": "https://tqm-ipa.github.io/js/img/icon.png",
+    "sourceDescription": "Kho IPA Jailbreak IOS - UnC0ver / Odyssey / Taurine / Chimera / by Trần Quang Minh : anhminh311105@gmail.com",
+    "appCategories": [
+        "Ứng dụng"
+    ],
+    "appRepositories": [
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "GBox",
+            "appVersion": "3.7.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/gbox.png",
+            "appPackage": "https://quangminh388.github.io/ipa/GBox-TQM.ipa",
+            "appDescription": "Store Sign For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "ESign",
+            "appVersion": "4.7.3",
+            "appImage": "https://tqm-ipa.github.io/js/img/esign.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Esign-TQM.ipa",
+            "appDescription": "Store Sign For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Scarlet",
+            "appVersion": "1.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/scarlet.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Scarlet-TQM.ipa",
+            "appDescription": "Store Sign For ios13 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Magic Sign",
+            "appVersion": "5.1.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/magicsign.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MagicSign-TQM.ipa",
+            "appDescription": "Store Sign For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "ZSign",
+            "appVersion": "7.2.8",
+            "appImage": "https://tqm-ipa.github.io/js/img/zsign.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Zsign-TQM.ipa",
+            "appDescription": "Store Sign For ios12 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "AppCake",
+            "appVersion": "7.2.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/appcake.png",
+            "appPackage": "https://quangminh388.github.io/ipa/AppCake-TQM.ipa",
+            "appDescription": "Store Apps For ios13 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger Lite",
+            "appVersion": "381.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/messlite.png",
+            "appPackage": "https://quangminh388.github.io/ipa/messegen-TQM.ipa",
+            "appDescription": "Messenger Lite For ios9-14.8.1 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 8.0.2",
+            "appVersion": "8.0.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver802-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 8.0.1",
+            "appVersion": "8.0.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver801-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 8.0.0",
+            "appVersion": "8.0.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver800-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 7.0.2",
+            "appVersion": "7.0.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver702-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 6.2.0",
+            "appVersion": "6.2.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver620-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 6.1.2",
+            "appVersion": "6.1.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver612-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 6.0.0",
+            "appVersion": "6.0.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver600-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Unc0ver 5.3.1",
+            "appVersion": "5.3.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/unc0ver.png",
+            "appPackage": "https://quangminh388.github.io/ipa/unc0ver531-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-14.8 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Taurine",
+            "appVersion": "1.1.6",
+            "appImage": "https://tqm-ipa.github.io/js/img/ta.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Taurine-TQM.ipa",
+            "appDescription": "jailbreak For ios14.0-14.3 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Cheyote",
+            "appVersion": "1.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/cheyote.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Cheyote-TQM.ipa",
+            "appDescription": "jailbreak For ios15.0-15.1.1 | A11 - A14"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Th0r",
+            "appVersion": "2.9.6",
+            "appImage": "https://tqm-ipa.github.io/js/img/thor.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Th0r-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-11.4.1 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Th0r4",
+            "appVersion": "1.4.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/th0r.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Th0r4-TQM.ipa",
+            "appDescription": "jailbreak For ios13.0-13.7 | A9-A13"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Th0r14",
+            "appVersion": "4.1.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/th0r.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Th0r14-TQM.ipa",
+            "appDescription": "jailbreak For ios14.0-14.3 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Odyssey",
+            "appVersion": "1.4.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/ody.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Odyssey-TQM.ipa",
+            "appDescription": "jailbreak For ios13.0-13.7 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Chimera",
+            "appVersion": "1.6.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/chimera.png",
+            "appPackage": "https://quangminh388.github.io/ipa/chimera-TQM.ipa",
+            "appDescription": "jailbreak For ios12.2-12.5.6 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Chimera",
+            "appVersion": "1.6.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/chimera.png",
+            "appPackage": "https://quangminh388.github.io/ipa/chimera12-TQM.ipa",
+            "appDescription": "jailbreak For ios12.0-12.1.4 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Freya",
+            "appVersion": "1.2.5",
+            "appImage": "https://tqm-ipa.github.io/js/img/freya.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Freya-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-12.5.6 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Electra",
+            "appVersion": "2.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/electra.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Electra-TQM.ipa",
+            "appDescription": "jailbreak For ios11.0-11.4.1 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "DoubleH3lix",
+            "appVersion": "RC8",
+            "appImage": "https://tqm-ipa.github.io/js/img/doubleH3lix.png",
+            "appPackage": "https://quangminh388.github.io/ipa/doubleH3lix-TQM.ipa",
+            "appDescription": "jailbreak For ios10.0-10.3.3| 64bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "H3lix",
+            "appVersion": "RC6",
+            "appImage": "https://tqm-ipa.github.io/js/img/h3lix.png",
+            "appPackage": "https://quangminh388.github.io/ipa/h3lix-TQM.ipa",
+            "appDescription": "jailbreak For ios10.0-10.3.4 | 32bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Meridian",
+            "appVersion": "1.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/Meridian.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Meridian-TQM.ipa",
+            "appDescription": "jailbreak For ios10.0-10.3.3 | 64bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Yalu102",
+            "appVersion": "0.7",
+            "appImage": "https://tqm-ipa.github.io/js/img/yalu102.png",
+            "appPackage": "https://quangminh388.github.io/ipa/yalu102-TQM.ipa",
+            "appDescription": "jailbreak For ios10.0-10.2 | 64bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "ScreenshotX",
+            "appVersion": "1.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/ScreenshotX.png",
+            "appPackage": "https://quangminh388.github.io/ipa/ScreenshotX-TQM.ipa",
+            "appDescription": "ScreenshotX For ios9.3 Trở nên | 64bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook Lite",
+            "appVersion": "200.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/lite.png",
+            "appPackage": "https://quangminh388.github.io/ipa/FaceLite-TQM.ipa",
+            "appDescription": "Facebook Lite For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook v82",
+            "appVersion": "82.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb82.png",
+            "appPackage": "https://archive.org/download/facebook-82-tqm/Facebook82-TQM.ipa",
+            "appDescription": "Facebook v82 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook 2",
+            "appVersion": "390.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb.png",
+            "appPackage": "https://archive.org/download/facebook-2-tqm/Facebook2-TQM.ipa",
+            "appDescription": "Facebook 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook 3",
+            "appVersion": "390.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb.png",
+            "appPackage": "https://archive.org/download/facebook-tqm/Facebook-TQM.ipa",
+            "appDescription": "Facebook 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook 4",
+            "appVersion": "390.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb.png",
+            "appPackage": "https://archive.org/download/facebook-4_20220823/Facebook4.ipa",
+            "appDescription": "Facebook 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook 5",
+            "appVersion": "390.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb.png",
+            "appPackage": "https://archive.org/download/facebook-5_202208/Facebook5.ipa",
+            "appDescription": "Facebook 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Facebook 6",
+            "appVersion": "390.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/fb.png",
+            "appPackage": "https://archive.org/download/facebook-6_202208/Facebook6.ipa",
+            "appDescription": "Facebook 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger 2",
+            "appVersion": "311.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/mes.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Messenger2-TQM.ipa",
+            "appDescription": "Messenger 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger 3",
+            "appVersion": "311.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/mes.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Messenger3.ipa",
+            "appDescription": "Messenger 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger 4",
+            "appVersion": "311.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/mes.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Messenger4.ipa",
+            "appDescription": "Messenger 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger 5",
+            "appVersion": "311.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/mes.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Messenger5.ipa",
+            "appDescription": "Messenger 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Messenger 6",
+            "appVersion": "311.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/mes.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Messenger6.ipa",
+            "appDescription": "Messenger 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Zalo 2",
+            "appVersion": "221001.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/zalo.png",
+            "appPackage": "https://archive.org/download/zalo-2-tqm/Zalo2-TQM.ipa",
+            "appDescription": "Zalo 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Zalo 3",
+            "appVersion": "221001.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/zalo.png",
+            "appPackage": "https://archive.org/download/zalo-3/Zalo3.ipa",
+            "appDescription": "Zalo 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Zalo 4",
+            "appVersion": "221001.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/zalo.png",
+            "appPackage": "https://archive.org/download/zalo-4/Zalo4.ipa",
+            "appDescription": "Zalo 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Zalo 5",
+            "appVersion": "221001.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/zalo.png",
+            "appPackage": "https://archive.org/download/zalo-5/Zalo5.ipa",
+            "appDescription": "Zalo 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Zalo 6",
+            "appVersion": "221001.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/zalo.png",
+            "appPackage": "https://archive.org/download/zalo-6/Zalo6.ipa",
+            "appDescription": "Zalo 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WhatsApp 2",
+            "appVersion": "22.20.75",
+            "appImage": "https://tqm-ipa.github.io/js/img/whatsapp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/WhatsApp-TQM.ipa",
+            "appDescription": "WhatsApp 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WhatsApp 3",
+            "appVersion": "22.20.75",
+            "appImage": "https://tqm-ipa.github.io/js/img/whatsapp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/WhatsAppTQM3.ipa",
+            "appDescription": "WhatsApp 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WhatsApp 4",
+            "appVersion": "22.20.75",
+            "appImage": "https://tqm-ipa.github.io/js/img/whatsapp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/WhatsAppTQM4.ipa",
+            "appDescription": "WhatsApp 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WhatsApp 5",
+            "appVersion": "22.20.75",
+            "appImage": "https://tqm-ipa.github.io/js/img/whatsapp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/WhatsAppTQM5.ipa",
+            "appDescription": "WhatsApp 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WhatsApp 6",
+            "appVersion": "22.20.75",
+            "appImage": "https://tqm-ipa.github.io/js/img/whatsapp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/WhatsAppTQM6.ipa",
+            "appDescription": "WhatsApp 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WeChat 2",
+            "appVersion": "8.0.17",
+            "appImage": "https://tqm-ipa.github.io/js/img/wechat.png",
+            "appPackage": "https://archive.org/download/we-chat-tqm-2/WeChatTQM2.ipa",
+            "appDescription": "WeChat 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WeChat 3",
+            "appVersion": "8.0.17",
+            "appImage": "https://tqm-ipa.github.io/js/img/wechat.png",
+            "appPackage": "https://archive.org/download/we-chat-tqm-3/WeChatTQM3.ipa",
+            "appDescription": "WeChat 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WeChat 4",
+            "appVersion": "8.0.17",
+            "appImage": "https://tqm-ipa.github.io/js/img/wechat.png",
+            "appPackage": "https://archive.org/download/we-chat-tqm-4/WeChatTQM4.ipa",
+            "appDescription": "WeChat 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WeChat 5",
+            "appVersion": "8.0.17",
+            "appImage": "https://tqm-ipa.github.io/js/img/wechat.png",
+            "appPackage": "https://archive.org/download/we-chat-tqm-5/WeChatTQM5.ipa",
+            "appDescription": "WeChat 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "WeChat 6",
+            "appVersion": "8.0.17",
+            "appImage": "https://tqm-ipa.github.io/js/img/wechat.png",
+            "appPackage": "https://archive.org/download/we-chat-tqm-6/WeChatTQM6.ipa",
+            "appDescription": "WeChat 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "MoMo 2",
+            "appVersion": "4.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/momo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MoMoTQM2.ipa",
+            "appDescription": "MoMo 2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "MoMo 3",
+            "appVersion": "4.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/momo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MoMoTQM3.ipa",
+            "appDescription": "MoMo 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "MoMo 4",
+            "appVersion": "4.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/momo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MoMoTQM4.ipa",
+            "appDescription": "MoMo 4 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "MoMo 5",
+            "appVersion": "4.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/momo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MoMoTQM5.ipa",
+            "appDescription": "MoMo 5 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "MoMo 6",
+            "appVersion": "4.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/momo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/MoMoTQM6.ipa",
+            "appDescription": "MoMo 6 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Instagram++",
+            "appVersion": "216.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/ig.png",
+            "appPackage": "https://archive.org/download/instageram-TQM/instageram-TQM.ipa",
+            "appDescription": "Instagram++ For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "TikTok No Logo",
+            "appVersion": "27.4.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/tiktok.png",
+            "appPackage": "https://archive.org/download/tik-tok-tqm/TikTok-TQM.ipa",
+            "appDescription": "TikTok No Logo For ios13 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "TikTok No Logo",
+            "appVersion": "19.3.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/tiktok.png",
+            "appPackage": "https://quangminh388.github.io/ipa/TikTok-TQM19.ipa",
+            "appDescription": "TikTok No Logo For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "YouNoAds TQM",
+            "appVersion": "17.32.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/yt.png",
+            "appPackage": "https://archive.org/download/ytnoads-TQM/ytnoads-TQM.ipa",
+            "appDescription": "Youtube No ads For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "DLTube TQM",
+            "appVersion": "17.32.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/yt.png",
+            "appPackage": "https://archive.org/download/dltube-tqm/DLTubeTQM.ipa",
+            "appDescription": "Youtube No ads For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "uYou ( PiP )",
+            "appVersion": "17.36.3",
+            "appImage": "https://tqm-ipa.github.io/js/img/yt.png",
+            "appPackage": "https://archive.org/download/uyou-TQM/uyou-TQM.ipa",
+            "appDescription": "Youtube No ads For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "HdoPlay",
+            "appVersion": "1.0.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/hdo.png",
+            "appPackage": "https://quangminh388.github.io/ipa/HdoPlay-TQM.ipa",
+            "appDescription": "HdoPlay No ads For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Play Diary",
+            "appVersion": "1.1.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/playdiary.png",
+            "appPackage": "https://quangminh388.github.io/ipa/PlayDiary-TQM.ipa",
+            "appDescription": "Play Diary For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Kodi",
+            "appVersion": "19.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/kodi.png",
+            "appPackage": "https://archive.org/download/kodi-TQM/kodi-TQM.ipa",
+            "appDescription": "Kodi For ios10.0 Trở nên | 64bit"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "PPSSPP",
+            "appVersion": "1.12.3-340",
+            "appImage": "https://tqm-ipa.github.io/js/img/ppsspp.png",
+            "appPackage": "https://quangminh388.github.io/ipa/ppsspp-TQM.ipa",
+            "appDescription": "PPSSPP For ios9 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "ZingVip",
+            "appVersion": "4.0.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/zing.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Zing-TQM.ipa",
+            "appDescription": "ZingVip For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Ulike Premium",
+            "appVersion": "2.9.7",
+            "appImage": "https://tqm-ipa.github.io/js/img/ulike.png",
+            "appPackage": "https://archive.org/download/ulike-TQM/ulike-TQM.ipa",
+            "appDescription": "Ulike Premium For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Camera360 Gold",
+            "appVersion": "9.9.33",
+            "appImage": "https://tqm-ipa.github.io/js/img/camera360.png",
+            "appPackage": "https://archive.org/download/camera-360-tqm/Camera360-TQM.ipa",
+            "appDescription": "Camera360 Gold For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Intolive Pro",
+            "appVersion": "3.3.3",
+            "appImage": "https://tqm-ipa.github.io/js/img/intolivepro.png",
+            "appPackage": "https://quangminh388.github.io/ipa/intolivepro-TQM.ipa",
+            "appDescription": "Intolive Pro For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "KineMaster Premium",
+            "appVersion": "6.0.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/kinesmaster.png",
+            "appPackage": "https://quangminh388.github.io/ipa/kinesmaster-TQM.ipa",
+            "appDescription": "KineMaster Premium For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Spotifi Premium",
+            "appVersion": "8.6.42",
+            "appImage": "https://tqm-ipa.github.io/js/img/spotifi.png",
+            "appPackage": "https://quangminh388.github.io/ipa/spotifi-TQM.ipa",
+            "appDescription": "Spotifi Premium For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "PicsArt Premium",
+            "appVersion": "21.3.9",
+            "appImage": "https://tqm-ipa.github.io/js/img/pic.png",
+            "appPackage": "https://archive.org/download/pics-art-tqm/PicsArt-TQM.ipa",
+            "appDescription": "PicsArt Premium For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Lightroom",
+            "appVersion": "8.0.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/lr.png",
+            "appPackage": "https://archive.org/download/lightroom-TQM/lightroom-TQM.ipa",
+            "appDescription": "Lightroom For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "AdobePS Premium",
+            "appVersion": "22.15.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/adope.png",
+            "appPackage": "https://archive.org/download/adope-TQM/adope-TQM.ipa",
+            "appDescription": "AdobePS Premium For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Filza",
+            "appVersion": "3.7",
+            "appImage": "https://tqm-ipa.github.io/js/img/filza.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Filza-TQM.ipa",
+            "appDescription": "Filza NonJB For ios13.0-14.3 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Filza 15",
+            "appVersion": "3.8",
+            "appImage": "https://tqm-ipa.github.io/js/img/filza.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Filza15-TQM.ipa",
+            "appDescription": "Filza NonJB For ios15.0-15.1.1 | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Subway Surfers",
+            "appVersion": "2.35.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/subwaysurfers.png",
+            "appPackage": "https://archive.org/download/subway-surf-tqm/SubwaySurf-TQM.ipa",
+            "appDescription": "Subway Surfers For ios11 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Minecraft",
+            "appVersion": "1.19.30",
+            "appImage": "https://tqm-ipa.github.io/js/img/minecraft.png",
+            "appPackage": "https://archive.org/download/minecraft-tqm/Minecraft-TQM.ipa",
+            "appDescription": "Minecraft For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "incredibox",
+            "appVersion": "0.5.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/incredibox.png",
+            "appPackage": "https://archive.org/download/incredibox-TQM/incredibox-TQM.ipa",
+            "appDescription": "incredibox For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Temple Run2",
+            "appVersion": "1.88.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/templerun.png",
+            "appPackage": "https://archive.org/download/templerun2-TQM/templerun2-TQM.ipa",
+            "appDescription": "Temple Run2 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "GTA Vice City",
+            "appVersion": "1.5.6",
+            "appImage": "https://tqm-ipa.github.io/js/img/gtavicecity.png",
+            "appPackage": "https://archive.org/download/gtavicecity-TQM/gtavicecity-TQM.ipa",
+            "appDescription": "GTA Vice City For ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "GTA III",
+            "appVersion": "1.3.13",
+            "appImage": "https://tqm-ipa.github.io/js/img/gta3.png",
+            "appPackage": "https://archive.org/download/gta3-TQM/gta3-TQM.ipa",
+            "appDescription": "GTA III For ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "GTA San",
+            "appVersion": "2.02.07",
+            "appImage": "https://tqm-ipa.github.io/js/img/gtasan.png",
+            "appPackage": "https://archive.org/download/gtasa-tqm/GTASA-TQM.ipa",
+            "appDescription": "GTA San For ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Getting Over it",
+            "appVersion": "1.05",
+            "appImage": "https://tqm-ipa.github.io/js/img/gettingoverit.png",
+            "appPackage": "https://archive.org/download/gettingoverit-TQM/gettingoverit-TQM.ipa",
+            "appDescription": "Getting Over it For ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Shadow Fight 3",
+            "appVersion": "1.29.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/shadowfight3.png",
+            "appPackage": "https://archive.org/download/shadowfight3-TQM/shadowfight3-TQM.ipa",
+            "appDescription": "Shadow Fight 3 For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Shadow Fight 2",
+            "appVersion": "2.23.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/shadowfight2.png",
+            "appPackage": "https://archive.org/download/shadowfight2-TQM/shadowfight2-TQM.ipa",
+            "appDescription": "Shadow Fight 2 For ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Clash of Clan",
+            "appVersion": "15.0.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/clash.png",
+            "appPackage": "https://archive.org/download/clash-TQM/clash-TQM.ipa",
+            "appDescription": "Clash of Clan For ios11 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "PvZ2",
+            "appVersion": "9.8.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/pvz2.png",
+            "appPackage": "https://archive.org/download/pvz2-TQM/pvz2-TQM.ipa",
+            "appDescription": "PvZ2 Hack For ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "PvZ1",
+            "appVersion": "1.9.13",
+            "appImage": "https://tqm-ipa.github.io/js/img/pvz.png",
+            "appPackage": "https://quangminh388.github.io/ipa/PvZ-TQM.ipa",
+            "appDescription": "PvZ1 Hack For ios7 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Liên Quân Hack Maps",
+            "appVersion": "1.47.18",
+            "appImage": "https://tqm-ipa.github.io/js/img/lol.png",
+            "appPackage": "https://archive.org/download/lol-TQM/lol-TQM.ipa",
+            "appDescription": "Liên Quân Hack ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "FreeFire Hack",
+            "appVersion": "1.93.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/freefire.png",
+            "appPackage": "https://archive.org/download/freefire-TQM/freefire-TQM.ipa",
+            "appDescription": "FreeFire Hack ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "8BallPool",
+            "appVersion": "5.8.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/8ballpool.png",
+            "appPackage": "https://quangminh388.github.io/ipa/8BallPool-TQM.ipa",
+            "appDescription": "8BallPool ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Candy Crush Saga",
+            "appVersion": "1.233.1",
+            "appImage": "https://tqm-ipa.github.io/js/img/candy.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Candy-TQM.ipa",
+            "appDescription": "Candy Crush Saga ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Candy Crush Soda",
+            "appVersion": "1.190.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/soda.png",
+            "appPackage": "https://quangminh388.github.io/ipa/Soda-TQM.ipa",
+            "appDescription": "Candy Crush Soda ios8 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Homescapes",
+            "appVersion": "5.7.3",
+            "appImage": "https://tqm-ipa.github.io/js/img/home.png",
+            "appPackage": "https://archive.org/download/homescapes-tqm/Homescapes-TQM.ipa",
+            "appDescription": "Homescapes ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "DLS22",
+            "appVersion": "9.14",
+            "appImage": "https://tqm-ipa.github.io/js/img/dls22.png",
+            "appPackage": "https://archive.org/download/dls-22-tqm/DLS22-TQM.ipa",
+            "appDescription": "DLS22 Hack ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Hungry Shark World",
+            "appVersion": "4.7.0",
+            "appImage": "https://tqm-ipa.github.io/js/img/hungryshark.png",
+            "appPackage": "https://archive.org/download/hungry-shark-tqm/HungryShark-TQM.ipa",
+            "appDescription": "Hungry Shark World ios12 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Hungry Shark Evolution ",
+            "appVersion": "9.1.8",
+            "appImage": "https://tqm-ipa.github.io/js/img/hungryshark.png",
+            "appPackage": "https://archive.org/download/hungry-shark-evo-tqm/HungrySharkEvo-TQM.ipa",
+            "appDescription": "Hungry Shark Evolution ios11 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Archero",
+            "appVersion": "4.3.4",
+            "appImage": "https://tqm-ipa.github.io/js/img/archero.png",
+            "appPackage": "https://archive.org/download/archero-tqm/Archero-TQM.ipa",
+            "appDescription": "Archero Hack ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Inside",
+            "appVersion": "1.1.8",
+            "appImage": "https://tqm-ipa.github.io/js/img/inside.png",
+            "appPackage": "https://archive.org/download/inside-tqm/Inside-TQM.ipa",
+            "appDescription": "Inside ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "The Spike",
+            "appVersion": "1.1.2",
+            "appImage": "https://tqm-ipa.github.io/js/img/thespike.png",
+            "appPackage": "https://archive.org/download/the-spike-tqm/TheSpike-TQM.ipa",
+            "appDescription": "The Spike ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Call of Duty",
+            "appVersion": "1.8.36",
+            "appImage": "https://tqm-ipa.github.io/js/img/duty.png",
+            "appPackage": "https://archive.org/download/duty-tqm/DutyTQM.ipa",
+            "appDescription": "Call of Duty ios10 Trở nên | All Devices"
+        },
+
+        {
+            "appType": "ENT_SIGN",
+            "appCateIndex": 0,
+            "appName": "Lẩu 5 sao",
+            "appVersion": "1.4.5",
+            "appImage": "https://tqm-ipa.github.io/js/img/lau.png",
+            "appPackage": "https://archive.org/download/myhots-tqm/MyhotsTQM.ipa",
+            "appDescription": "Lẩu 5 sao ios10 Trở nên | All Devices"
+        }
+    ]
+}
