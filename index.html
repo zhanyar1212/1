@@ -1,1124 +1,354 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="kurd">
 <head>
-      <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-<meta name="viewport" content="width=device-width, user-scalable=no">
-  
-<title>Kurd_App_Store_IPA</title>
-  
-    <link rel="shortcut icon" href="https://is.gd/a3FhpT" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://is.gd/a3FhpT" />
-    <link rel="apple-touch-icon" sizes="72x72" href="https://is.gd/a3FhpT" />
-    <link rel="apple-touch-icon" sizes="114x114" href="https://is.gd/a3FhpT" />
-  
-  <link rel="stylesheet" href="tab/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="Tab/favicon.ico">
+
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+    <title>Zhanyar IOS</title>
+
+    <script src="sw.js"></script>
+    <script type="text/javascript" src="./tab/js/sign/vue.min.js"></script>
+    <script type="text/javascript" src="./tab/js/sign/axios.min.js"></script>
+    <script type="text/javascript" src="./tab/js/sign/index.js"></script>
+    <script type="text/javascript" src="./tab/js/sign/qrcode.min.js"></script>
+    <link rel="stylesheet" href="./tab/js/sign/css/app.css">
+    <link rel="stylesheet" href="./tab/js/sign/css/sign.css">
+    <style>
+
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.3s
+        }
+        .fade-enter, .fade-leave-to  {
+            opacity: 0
+        }
+
+    </style>
+
 
 </head>
-<body onload="thongbaopopup()">
+<body>
 
-    <script>
-      new Darkmode({
-        bottom: '90px',
-        right: '23.5px',
-        time: '0.5s',
-        label: '💡'
-      }).showWidget();
-    </script>
+    <div id="app">
+        <div class="p-20 container-fluid">
+
+            <nav class="navbar navbar-dark bg-info navbar-expand-lg"><a href="#" target="_self" class="navbar-brand">Kurd_App_Store_Sign</a></nav></p>
+
+            <div class="row mt-lg-5">
+                <div class="col-lg-12 col-md-10 offset-md-20">
+                    <transition name = "fade">
+                        <div v-show="show" role="alert" aria-live="polite" aria-atomic="true" class="alert alert-dismissible alert-info">
+
+                          <span class="badge badge-secondary"> <a class="link" href="">File P12</a></span>
+                          <br>
+                          <span class="badge badge-secondary"> <a class="link" href="">File MobileConfig</a></span>
+                          <br>
+                          <span class="badge badge-secondary"> <a class="link">Password :</a></span>
+                          
+                          
+                          
+                          
+                          
+                        </div>
+                    </transition>
+
+                
 
 
-<div class="title">  
-  
-                      
-                      
-<div class="title-txt"><h3 class="headerss" style="text-align:left;margin-top: 20px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-size: 20px;">Kurd_App_Store_IPA</h3>
-         </div>
+                    <div class="card">
+                        <div class="card-body" v-show="showStep1">
+                            <h4 class="card-title">فرمانی یەکەم</h4>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
+                                        <input type="file" @change="getFile($event)" ref="ipa" required="required" accept=".ipa" aria-required="true" class="custom-file-input" v-bind:class="ipaCss" id="ipa" style="z-index: -5;">
+                                        <label data-browse="فایل" class="custom-file-label" for="ipa">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ ipaText }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <div class="custom-file b-form-file is-invalid" v-bind:class="p12Css">
+                                        <input type="file" @change="getFile($event)" ref="p12" required="required" accept=".p12" aria-required="true" class="custom-file-input" v-bind:class="p12Css" id="p12" style="z-index: -5;">
+                                        <label data-browse="فایل" class="custom-file-label" for="p12">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ p12Text }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="password" v-model="password" ref="pwd" placeholder="دابنێ .p12 پاسوۆردی" required="required" aria-required="true" aria-invalid="true" class="form-control" v-bind:class="pwdCss" id="password">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <div class="custom-file b-form-file" v-bind:class="mobCss">
+                                        <input type="file" ref="mob" @change="getFile($event)" required="required" accept=".mobileprovision" aria-required="true" class="custom-file-input" v-bind:class="mobCss" id="mobileprovision" style="z-index: -5;">
+                                        <label data-browse="فایل" class="custom-file-label" for="mobileprovision">
+                                            <span class="d-block form-file-text" style="pointer-events: none;">{{ mobText }}</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <input type="text" v-model="identifier" ref="identifier" placeholder="com.yourname.nameapp" class="form-control" id="identifier">
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <input type="text" v-model="name" ref="name" placeholder="ناوی بەرنامە دیاری بکە" class="form-control" id="name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <label class="form-control">
+                                        <span>سرینەوەی کتێبخانەی داینامیکی</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue">      بەڵێ</div>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-control">
+                                        <span>سرینەوەی کتێبخانەی داینامیکی</span>
+                                        <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue">      نەخێر</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-block" @click="upload">
+                                <svg style="
+                                height: 25px;
+                                margin-bottom: 3px;
+                                margin-top: -3px;
+                                " xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path fill="white" d="M16,10.5H8a3,3,0,0,0-3,3v5a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3v-5A3,3,0,0,0,16,10.5Zm-.42,2L12.7,15.38a1,1,0,0,1-1.4,0L8.42,12.5Zm1.42,6a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V13.91l2.88,2.87a2.94,2.94,0,0,0,2.12.89,3,3,0,0,0,2.12-.88L17,13.91ZM9,6.5h3.59l-.3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l2-2a1,1,0,0,0,.21-.33,1,1,0,0,0,0-.76,1,1,0,0,0-.21-.33l-2-2a1,1,0,0,0-1.42,1.42l.3.29H9a1,1,0,0,0,0,2Z"/></svg>
+                                رەوانە کردن بۆ بەشی پشکنین 
+                            </button>
+                        </div>
+
+                        <div class="card-body" v-show="showStep2">
+                            <h4 class="card-title">ئێستا فەیلەکان دائەگرێ</h4>
+                            <div class="progress">
+                                <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progressBar }}" class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                                     v-bind:style="{'width': progressBar + '%'}"><strong>{{ progressBar }}%</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body" v-show="showStep3">
+                            <h4 class="card-title"> فرمانی دووەم
+                            </h4>
+                            <svg style="height: 20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-spin">
+                                    <path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" class=""></path>
+                            </svg> چــاوەروانــبــە بــۆ پــشــکــنــیــن
+                        </div>
+
+                        <div class="card-body" v-show="showStep4">
+                            <h4 class="card-title">سەرکەوتوو بو ئێستا ئەتوانی داونلۆندی بکەیت</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h6>لە رێگەی کامێراوە سکان بکە</h6>
+                                    <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h6>لە رێگای لینک کۆپی بکە</h6>
+                                    <a :href="download"
+                                       target="_self" class="d-block mx-auto">{{download}}</a>
+                                    <div style="margin-top: 48px;"><a :href="download_ipa">IPA داونلۆندکردنی  </a></div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn mt-3 btn-primary btn-block" @click="index">گەرانەوە بۆ سەرەکی</button>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-<br><br>
-<br>
-
-<center>
-  <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-<a class="link" href="">𝗙𝗶𝗹𝗲 𝗣𝟭𝟮</a>
-  <br>
-<a class="link" href="">𝗙𝗶𝗹𝗲 𝗠𝗼𝗯𝗶𝗹𝗲 𝗖𝗼𝗻𝗳𝗶𝗴</a>
-    <br>
-    <a class="link">𝗣𝗮𝘀𝘀𝘄𝗼𝗿𝗱 :</a>
-    
-</div>
-  </center>
-<style>
-.alert {
-  opacity: 1;
-  transition: opacity 0.6s; /* 600ms to fade out */
-}
-  /* The alert message box */
-.alert {
-  padding: 20px;
-  width: auto;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: #E5E4E2;
-  border-width: 1px;
-  height: auto;
-  width: 80%;
-  background-color:#c7c7c7;
-  color: white;
-  margin-bottom: 15px;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
-</style>
-  <br>
+        </div>
+    </div>
 
     <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, div, h1, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
+        new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                showStep1: true,
+                showStep2: false,
+                showStep3: false,
+                showStep4: false,
+                progressBar: 0,
+                ipaCss: 'is-invalid',
+                ipaText: 'هەڵبژێرە .ipa فایلی',
+                p12Css: 'is-invalid',
+                p12Text: 'هەڵبژێرە .p12 فایلی',
+                pwdCss: 'is-invalid',
+                pwdText: 'دابنێ .p12 پاسوۆردی',
+                mobCss: 'is-invalid',
+                mobText: 'هەڵبژێرە .mobileprovision فایلی',
+                download: '',
+                download_ipa: '',
+                ipa: '',
+                p12: '',
+                password: '',
+                mobileprovision: '',
+                name: '',
+                identifier: '',
+                unlockValue: 0,
+            },
+            methods: {
+                getFile: function (params) {
+                    console.info(params);
+                    switch (params.srcElement.accept) {
+                        case '.ipa':
+                            if (params.target.files.length > 0) {
+                                this.ipaCss = 'is-valid';
+                                this.ipaText = params.target.files[0].name;
+                                this.ipa = params.target.files[0];
+                            } else {
+                                this.ipaCss = 'is-invalid';
+                                this.ipaText = 'فایلەکە هەڵەتە یکایە ب دڵنیا بەوە';
+                                this.ipa = '';
+                            }
+                            break;
+                        case '.p12':
+                            if (params.target.files.length > 0) {
+                                this.p12Css = 'is-valid';
+                                this.p12Text = params.target.files[0].name;
+                                this.p12 = params.target.files[0];
+                            } else {
+                                this.p12Css = 'is-invalid';
+                                this.p12Text = 'فایلەکە هەڵەیە تکایە دڵنیا بەوە';
+                                this.p12 = '';
+                            }
+                            break;
+                        case '.mobileprovision':
+                            if (params.target.files.length > 0) {
+                                this.mobCss = 'is-valid';
+                                this.mobText = params.target.files[0].name;
+                                this.mobileprovision = params.target.files[0];
+                            } else {
+                                this.mobCss = 'is-invalid';
+                                this.mobText = 'فایلەکە هەڵەیە تکایە دڵنیا بەوە';
+                                this.mobileprovision = '';
+                            }
+                            break;
+                    }
+                },
+                upload: function () {
+                    let that = this;
+                    var refs = this.$refs;
+                    var keys = Object.keys(refs);
 
+                    for (var i = 0; i < Object.keys(refs).length; i++) {
+                        if (refs[keys[i]].ariaRequired && !refs[keys[i]].value) {
+                            refs[keys[i]].focus();
+                            return false;
+                        }
+                    }
 
-  for (i = 0; i < li.length; i++) {
-    h3 = li[i].getElementsByTagName("h3")[0];
-    txtValue = h3.textContent || h3.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
+                    // 文件上传
+                    this.showStep1 = false;
+                    this.showStep2 = true;
+                    var formData = new FormData();
+                    formData.append("ipa", this.ipa);
+                    formData.append("p12", this.p12);
+                    formData.append("name", this.name);
+                    formData.append("password", this.password);
+                    formData.append("unlock", this.unlockValue);
+                    formData.append("identifier", this.identifier);
+                    formData.append("mobileprovision", this.mobileprovision);
+                    let config = {
+                        headers: {
+                            'Content-Type': 'multipart/form-data'
+                        },
+                        onUploadProgress: (progressEvent) => {
+                            // 使用本地 progress 事件
+                            if (progressEvent.lengthComputable) {
+                                let num = Math.round((progressEvent.loaded / progressEvent.total) * 100)
+                                this.progressBar = num // 使用某种 UI 进度条组件会用到的百分比
+                            }
+                        }
+                    }
 
-<center>
+                    axios.post(uploadUrl, formData, config).then((response) => {
+                        if(response.data.code==0){
+                            // 上传完成，开始签名
+                            that.showStep2 = false;
+                            that.showStep3 = true;
+                            let data = response.data.data;
 
-<input type="text" id="myInput" onkeyup="myFunction()" style="background-color:#dedede" placeholder="Search">
+                            this.status(data);
+
+                        } else {
+                            alert('تکایە بوسوۆردەکە بە دروستی دابنێ');
+                        }
+                    }).catch(function (error) {
+                        alert(error);
+                    });
+                },
+                status: function(params) {
+                    let that = this;
+                    var signData = new FormData();
+                    signData.append("uuid", params.uuid);
+                    signData.append("time", params.time);
+
+                    let headers = {
+                        headers: {
+                            'Content-Type': 'multipart/form-data'
+                        }
+                    }
+
+                    axios.post(checkUrl, signData, headers).then((response) => {
+                        if (response.data.code == 0) {
+                            // 签名成功
+                            this.showStep3 = false;
+                            this.showStep4 = true;
+
+                            that.download = downloadUrl + '/' + params.uuid + '/' + params.time;
+                            that.download_ipa = storageUrl + '/' + params.time + '/' + params.uuid + '/' + 'resign_' + params.time + '.ipa'
+                            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                                width : 100,
+                                height : 100
+                            });
+                            qrcode.makeCode(that.download);
+                        } else if (response.data.code == 1) {
+                            console.info("签名中");
+                            setTimeout("this.status()","3000");
+                            const timer = setInterval(() => {
+                                clearInterval(timer)
+                                this.status(params);
+                            }, 3000)
+                        } else {
+                            alert("Signature failed");
+                            return;
+                        }
+                    });
+                },
+                close: function () {
+                    this.show = false;
+                },
+                index: function () {
+                    location.reload();
+                }
+            },
+            watch: {
+                password: function (params) {
+                    if (params.length > 0) {
+                        this.pwdCss = 'is-valid';
+                    } else {
+                        this.pwdCss = 'is-invalid';
+                    }
+                },
+            },
+        })
+    </script>
+                                    </div>
+                                </div>
+                            </div>
 
 </center>
-
-<center>
-
-  <ul id="myUL">
-
-<h1 class="header" style="isolation: isolate; text-align:left;margin-top: 40px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit
--text-fill-color: transparent;font-size: 28px;">Hacked Games</h1>
-     
-
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/ipogoSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/Y0VMTeL9tG.png" alt="IMG">
-          <div class="app-info">
-                        <h3>iPogo</h3>
-            <p>Version : 2.7.4</p>
-            
-              <p>Size : 110.66 MB</p>    
-          </div>
-        </div>
-
-</li>
-
-
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/agarioSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/XQkj8SXgs7.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>Agar.io Hack</h3>
-            <p>Version : 2.20.3</p>
-            
-              <p>Size : 26MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/bully_20221125/agar.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/XQkj8SXgs7.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>Agar.io Hack 2</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 28.3 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/pool8Signed.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/NcTLjmvSp7.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>8 Ball Pool Hack</h3>
-            <p>Version : 5.7.1</p>
-            
-              <p>Size : 57.17 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/bully_20221125/8ball.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/NcTLjmvSp7.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>8 Ball Pool Hack 2</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 57.17 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/insideSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/oepa567NFo.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Playdead's INSIDE Hack</h3>
-            <p>Version : 1.1.0</p>
-            
-              <p>Size : 643 MB</p>    
-          </div>
-        </div>
-
-</li>
-
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/amongUsSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/RUhaH2YpAm.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Among Us! Hack</h3>
-            <p>Version : 2021.12.15</p>
-            
-              <p>Size : 265 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="    https://archive.org/download/bully_20221125/among.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/RUhaH2YpAm.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Among Us! Hack 2</h3>
-            <p>Version : 2021.12.15</p>
-            
-              <p>Size : 243.5 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/SubwaySurfSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/MR9SUg5KaZ.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Subway Surfers</h3>
-            <p>Version : 2.5.1</p>
-            
-              <p>Size : 101.52 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/trank/subway.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/MR9SUg5KaZ.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Subway Surfers</h3>
-            <p>Version : 2.5.1</p>
-            
-              <p>Size : 90 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/CandyCrushHackSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/stNCta3FOP.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Candy Crush Saga Hack</h3>
-            <p>Version : 4.62</p>
-            
-              <p>Size : 56 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/bully_20221125/candy.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/stNCta3FOP.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Candy Crush Saga Hack 2</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 56 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/SonicDashHackSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/2aOVMYM83F.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Sonic Dash Hack</h3>
-            <p>Version : 4.15.2</p>
-            
-              <p>Size : 107 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/LastDayOnEarthSurvivalSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/bZf3n1botz.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Last Day On Earth : Survival</h3>
-            <p>Version : 1.17.2</p>
-            
-              <p>Size : 370.04 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    <h1 class="header" style="isolation: isolate; text-align:left;margin-top: 40px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit
--text-fill-color: transparent;font-size: 28px;">Paid Games</h1>
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/bullySigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/lIPudiIWTq.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Bully: Anniversary Edition</h3>
-            <p>Version : 1.1</p>
-            
-              <p>Size : 1.70 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/minecraftSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/08AFxBvUNU.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Minecraft</h3>
-            <p>Version : 1.19.40</p>
-            
-              <p>Size : 560.76 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/doodlejumpSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/hkZgqx109b.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Doodle Jump</h3>
-            <p>Version : 3.22.1</p>
-            
-              <p>Size : 44.27 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/gtasanandreasSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/ajDIYgov8b.png" alt="IMG">
-          <div class="app-info">
-                        <h3>GTA: San Andreas</h3>
-            <p>Version : 2.2</p>
-            
-              <p>Size : 1.52 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/pubg1_202210/gta.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/ajDIYgov8b.png" alt="IMG">
-          <div class="app-info">
-                        <h3>GTA: San Andreas</h3>
-            <p>Version : 2.2</p>
-            
-              <p>Size : 1.52 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/limboSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/ywQPmoO9PH.png" alt="IMG">
-          <div class="app-info">
-                        <h3>limbo</h3>
-            <p>Version : 1.1.19</p>
-            
-              <p>Size : 119 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/e0LJNL29cQ.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Getting Over It</h3>
-            <p>Version : 1.13</p>
-            
-              <p>Size : 139.38MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/fortniteSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/3NLi01Rwi1.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>Fortnite</h3>
-            <p>Version : 14.20</p>
-            
-              <p>Size : 161.18 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-   
-<h1 class="header" style="isolation: isolate; text-align:left;margin-top: 40px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit
--text-fill-color: transparent;font-size: 28px;">Tweaked Apps</h1>
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/WhatsAppPlusSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/QhgbR6HLvt.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>WhatsApp++</h3>
-            <p>Version : 2.20.80</p>
-            
-              <p>Size : 77.84MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/WhatsappSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/zquTRQOHWj.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>Watusi</h3>
-            <p>Version : 22.7.80</p>
-            
-              <p>Size : 52.81 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/WhatsAppBusinesSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/vEodY1tqwW.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>Watusi Business</h3>
-            <p>Version : 22.7.80</p>
-            
-              <p>Size : 56 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/Cercube5NoAdsSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/29LjazvI91.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Youtube Cercube</h3>
-            <p>Version : 15.38.2 (T5.2.4)</p>
-            
-              <p>Size : 93.9 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/inside_20221010_1537/youtube.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/29LjazvI91.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Youtube DL</h3>
-            <p>Version : 15.38.2</p>
-            
-              <p>Size : 123.5 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/YouTubeMusicPlusSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/Dn4fUA1A2z.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Youtube++</h3>
-            <p>Version : 13.24.9</p>
-            
-              <p>Size : 99.7 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://enjoy.tweakbox.pro/ipa/tweaked/spotifyplusplus.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/lx5vuarbH3.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Spotify++</h3>
-            <p>Version : 8.4.79</p>
-            
-              <p>Size : 64.65 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-        
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/trank/spotify.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/lx5vuarbH3.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Spotify Plus</h3>
-            <p>Version : 8.4.79</p>
-            
-              <p>Size : 64.65 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/InstagramPlusSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/rQBTB9b0sO.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Instagram++</h3>
-            <p>Version : 119.0</p>
-            
-              <p>Size : 45 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/InstagramRocketSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/Nj8B0Iqfwj.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Instagram Rocket</h3>
-            <p>Version : 227.0</p>
-            
-              <p>Size : 65 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/human_202211/insta.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/Nj8B0Iqfwj.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Instagram Rocket 2</h3>
-            <p>Version : 227.0</p>
-            
-              <p>Size : 65 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="http://cdn.i3rby.com/out/instagramrhinoSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/dS80cD395i.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Instagram Rhino</h3>
-            <p>Version : 187.0</p>
-            
-              <p>Size : 70.60 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/TikTokUnicornSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/FXMWxvyG9e.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>TikTok Unicorn</h3>
-            <p>Version : 19.3</p>
-            
-              <p>Size : 89.53 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/inside_20221010_1537/snap.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://upload.wikimedia.org/wikipedia/fr/a/ad/Logo-Snapchat.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Snap Chat ++</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 83.3 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-        <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/inside_20221010_1537/snapip.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://upload.wikimedia.org/wikipedia/fr/a/ad/Logo-Snapchat.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Snap Chat IP</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 81 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/TikTokUnicornSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/FXMWxvyG9e.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>TikTok Unicorn</h3>
-            <p>Version : 19.3</p>
-            
-              <p>Size : 89.53 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/tik-tok-auto-click-26.8.0-1669056842/TikTok%20AutoClick_26.8.0_1669056842.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/FXMWxvyG9e.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>TikTok AutoClicker</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 89.53 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-        
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/trank/tikl.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/FXMWxvyG9e.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>TikTok LRD</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 101.2 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/MessengerSharkSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/okxCiJVMQW.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Messenger Shark</h3>
-            <p>Version : 311.0</p>
-            
-              <p>Size : 33.85 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/human_202211/messnger.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/okxCiJVMQW.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Messenger Shark 2</h3>
-            <p>Version : 311.0</p>
-            
-              <p>Size : 33.85 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-<h1 class="header" style="isolation: isolate; text-align:left;margin-top: 40px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit
--text-fill-color: transparent;font-size: 28px;">Paid Apps</h1>
-    
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/cutcutproSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/X2DaJY2PQo.png" alt="IMG">
-          <div class="app-info">
-                        <h3>CuteCut Pro</h3>
-            <p>Version : 198.2</p>
-            
-              <p>Size : 35 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-      
-
-    
-    
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/kinemasterSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/QDUltVGqpZ.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Kinemaster Pro</h3>
-            <p>Version : 116.5</p>
-            
-              <p>Size : 63 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/PicsArtSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/GXqzub6oqF.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>PicsArt Hack</h3>
-            <p>Version : 14.6.1</p>
-            
-              <p>Size : 35 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/needfor_20221125/pics.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/GXqzub6oqF.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>PicsArt Pro</h3>
-            <p>Version : 14.6.1</p>
-            
-              <p>Size : 35 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/wallpapersproSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/3yrYICQTGL.jpg" alt="IMG">
-          <div class="app-info">
-                        <h3>WallCraft PRO</h3>
-            <p>Version : 2.7.4</p>
-            
-              <p>Size : 14 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/videostar++Signed.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/YOvkReMYk2.png" alt="IMG">
-          <div class="app-info">
-                        <h3>VideoStar Hack</h3>
-            <p>Version : 8.3.2</p>
-            
-              <p>Size : 247 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-        
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/trank/videostar.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/YOvkReMYk2.png" alt="IMG">
-          <div class="app-info">
-                        <h3>VideoStar Hack 2</h3>
-            <p>Version : 8.3.2</p>
-            
-              <p>Size : 247 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/video-star-11.2.8-1671808373/Video%20Star_11.2.8_1671808373.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/YOvkReMYk2.png" alt="IMG">
-          <div class="app-info">
-                        <h3>VideoStar Pro</h3>
-            <p>Version : 8.3.2</p>
-            
-              <p>Size : 247 MB</p>    
-          </div>
-        </div>
-  
-  
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/trank/videost.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/YOvkReMYk2.png" alt="IMG">
-          <div class="app-info">
-                        <h3>VideoStar Pro 2</h3>
-            <p>Version : 8.3.2</p>
-            
-              <p>Size : 247 MB</p>    
-          </div>
-        </div>
-
-      
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/InfltrSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/tySmHzBpgs.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Infltr++</h3>
-            <p>Version : 4.1.1</p>
-            
-              <p>Size : 48.51 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/procamSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/qukBuXrawF.png" alt="IMG">
-          <div class="app-info">
-                        <h3>ProCam 6</h3>
-            <p>Version : 6.0</p>
-            
-              <p>Size : 24 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/DjayProSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/o5n5HOcPzw.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Djay Pro</h3>
-            <p>Version : 1.0.20</p>
-            
-              <p>Size : 245.99 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/logoShopSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/Z2RREaDHh3.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>LOGO SHOP</h3>
-            <p>Version : 1.510.2</p>
-            
-              <p>Size : 90.60 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-        
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/inside_20221010_1537/luma.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://profilmmakerapps.com/tn/175x175/images/lumafusion.jpg?hash=1582746114" alt="IMG">
-          <div class="app-info">
-                        <h3>Luma Fusion</h3>
-            <p>Version : Last</p>
-            
-              <p>Size : 90.60 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://cdn.i3rby.com/out/PythonistaSigned.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://apinew.i3rby.com/uploads/icon/X2N8f2sakv.webp" alt="IMG">
-          <div class="app-info">
-                        <h3>Pythonista</h3>
-            <p>Version : 3.0</p>
-            
-              <p>Size : 242.14 MB</p>    
-          </div>
-        </div>
-
-</li>
-    
-
-<h1 class="header" style="isolation: isolate; text-align:left;margin-top: 40px;background: linear-gradient(100deg, #008080, #FF6699);-webkit-background-clip: text;-webkit
--text-fill-color: transparent;font-size: 28px;">Pubg Hack</h1>
-
-<li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://seeyouios.app/install-app/plist/ac06dfc5a5b811850d18.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://www.pubgmobile.com/images/event/common/icon.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Pubg Mobile V1</h3>
-            <p>Version : 2.3.1</p>
-            
-              <p>Size : 1.9 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://seeyouios.app/install-app/plist/53602d2fac8fa483b428.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://www.pubgmobile.com/images/event/common/icon.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Pubg Mobile V2</h3>
-            <p>Version : 2.3.1</p>
-            
-              <p>Size : 1.9 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-    
-        <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://seeyouios.app/install-app/plist/3483850fe5f60dac1963.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://www.pubgmobile.com/images/event/common/icon.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Pubg Mobile Shadow</h3>
-            <p>Version : 2.3.1</p>
-            
-              <p>Size : 1.9 GB</p>    
-          </div>
-        </div>
-
-</li>
-    
-    
-        
-        <li style="">
-    <div class="cell">       
-       <a class="get-btn" href="https://archive.org/download/pubg-mobile-2.3.0-v-1050/PUBG%20MOBILE_2.3.0_V1050.ipa" target="itms" >IPA</a>
-          <embed class="icon" src="https://www.pubgmobile.com/images/event/common/icon.png" alt="IMG">
-          <div class="app-info">
-                        <h3>Pubg Mobile LassIOS</h3>
-            <p>Version : 2.3.1</p>
-            
-              <p>Size : 1.9 GB</p>    
-          </div>
-        </div>
-
-</li>
-
-</ul>
-
-</center>
-
-<br><br>
-
- 
-<nav class="nav">
-  <a href="#" class="nav__link">
-   <embed class="tab1" src="https://cdn.glitch.global/b2974d8f-f5d5-4d69-8b67-f384676fa115/4a636a19-21de-4abf-b0c1-d8eda0ef1489.image.png?v=1672324622746">
-    <span class="nav__text" style=" color:#007aff;">Home Page</span>
-  </a>
-  
-    <a href="tab/sign.html" class="nav__link">
-   <embed class="tab1" src="https://cdn.glitch.global/b2974d8f-f5d5-4d69-8b67-f384676fa115/3684794a-eea9-4685-b5b5-172403eb1658.image.png?v=1672324669151">
-         <span class="navtext1" style=" color:#8e8e93;">Sign IPA</span>
-  </a>
-</nav>
-
-
-  </body>
-
-<div class="tbpopup" id="tbpopup-1">
-<div class="tboverlay"></div>
-<div class="tbcontent">
-<div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
-<div style="font-size:30px;color:#000;font-weight:bold">For information</div>
-<p>Join our Telegram<p>
-
-If you have any problems, you can send a message to the group chat<p>
-
-  <p>
-    ©2019  @PashaIos and Kurd_App Store ALL RIGHTS RESERVED , You are not authorized to copy, 
-    distribute, re-publish, modify or reverse-engineer any Content except as specifically authorized by @kurdapp8 in telegram writing.
-  </p>
-Link Telegram <a class="link" href="https://t.me/kurdapp8"> Join Telegram</a> Thanks For Join</p>
-</div>
-</div>
-
-<script>
-function thongbaopopup(){
-document.getElementById("tbpopup-1").classList.toggle("active");
-}
-
-</script>
-
+</body>
 </html>

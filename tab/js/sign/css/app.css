@@ -3483,24 +3483,24 @@ select.form-control[multiple],select.form-control[size],textarea.form-control {
 }
 
 .custom-control-input.is-valid~.custom-control-label:before,.was-validated .custom-control-input:valid~.custom-control-label:before {
-    border-color: #38c172
+    border-color: #00dd09
 }
 
 .custom-control-input.is-valid:checked~.custom-control-label:before,.was-validated .custom-control-input:valid:checked~.custom-control-label:before {
-    border-color: #5cd08d;
+    border-color: #00dd09;
     background-color: #5cd08d
 }
 
 .custom-control-input.is-valid:focus~.custom-control-label:before,.was-validated .custom-control-input:valid:focus~.custom-control-label:before {
-    box-shadow: 0 0 0 .2rem rgba(56,193,114,.25)
+    box-shadow: 0 0 0 .2rem  rgba(56,193,114,.25)
 }
 
 .custom-control-input.is-valid:focus:not(:checked)~.custom-control-label:before,.custom-file-input.is-valid~.custom-file-label,.was-validated .custom-control-input:valid:focus:not(:checked)~.custom-control-label:before,.was-validated .custom-file-input:valid~.custom-file-label {
-    border-color: #38c172
+    border-color: #00dd09
 }
 
 .custom-file-input.is-valid:focus~.custom-file-label,.was-validated .custom-file-input:valid:focus~.custom-file-label {
-    border-color: #38c172;
+    border-color: #00dd09;
     box-shadow: 0 0 0 .2rem rgba(56,193,114,.25)
 }
 
@@ -5692,6 +5692,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 }
 
 .card-title {
+    text-align: center;
     margin-bottom: .75rem
 }
 
